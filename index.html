@@ -8,6 +8,132 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <style type="text/css">
+.blockgony .blocky-row {
+    clear: left
+}
+
+.blockgony .blocky {
+    float: left;
+    margin-right: -12px;
+    margin-bottom: -36px;
+}
+
+.blockgony .blocky .blocky-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: .8em;
+    font-weight: 500;
+    text-decoration: none
+}
+
+.blockgony .blocky a:hover .blocky-middle {
+    text-decoration: underline
+}
+
+.blockgony .blocky.blocky-even {
+    margin-top: 30px
+}
+
+.blockgony .blocky.blocky-white .blocky-middle {
+    background-color: transparent;
+    border-color: transparent
+}
+
+.balloonsy-container {
+    position: relative;
+    height: 300px;
+    width: 350px;
+    overflow: hidden;
+    border: solid 8px #f60;
+    border-radius: 2px
+}
+
+.blockgony {
+    height: 100%;
+    min-height: 100%;
+}
+
+.blockgony .blocky {
+    position: relative;
+    bottom: -100%;
+    -webkit-animation: flowup 12s linear infinite;
+    animation: flowup 12s linear infinite;
+}
+
+.blockgony .blocky:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.blockgony .blocky:nth-child(2n) {
+    -webkit-animation-duration: 14s;
+    animation-duration: 14s
+}
+
+.blockgony .blocky:nth-child(3n) {
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s
+}
+
+.blockgony .blocky-middle {
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg)
+}
+
+.blockgony .blocky-text {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg)
+}
+
+.blockgony .blocky-middle {
+    color: #fff8f6;
+    background-color: #09f;
+    border-radius: 50% 50% 0 50%;
+    -webkit-transition: background-color .1s ease-in;
+    transition: background-color .1s ease-in
+}
+
+.blockgony .blocky .blocky-middle {
+    -webkit-transition: background-color .4s ease-in;
+    transition: background-color .4s ease-in
+}
+
+.blockgony .blocky a:hover .blocky-middle {
+    background-color: #f60
+}
+@-webkit-keyframes flowup {
+    0% {
+        bottom: -100%
+    }
+
+    100% {
+        bottom: 110px
+    }
+}
+
+@keyframes flowup {
+    0% {
+        bottom: -100%
+    }
+
+    100% {
+        bottom: 110px
+    }
+}
+
+    </style>
   </head>
   <body>
     <section class="page-header">
@@ -22,6 +148,39 @@
       <h1>
 <a id="animation-for-catching-helium-balloon-containing-link-css-only" class="anchor" href="#animation-for-catching-helium-balloon-containing-link-css-only" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Animation for catching helium balloon containing link (CSS only)</h1>
 
+      <section class="balloonsy-container">
+        <div class="blockgony clearfix">
+          <div class="blocky"><a href="#">
+              <div class="blocky-middle">
+                <div class="blocky-text">Balloonsy</div>
+              </div></a></div>
+          <div class="blocky blocky-even"><a href="#">
+              <div class="blocky-middle">
+                <div class="blocky-text">Balloon2</div>
+              </div></a></div>
+          <div class="blocky blocky-even"><a href="#">
+              <div class="blocky-middle">
+                <div class="blocky-text">Balloon3</div>
+              </div></a></div>
+          <div class="blocky"><a href="#">
+              <div class="blocky-middle">
+                <div class="blocky-text">Balloon4</div>
+              </div></a></div>
+          <div class="blocky blocky-even"><a href="#">
+              <div class="blocky-middle">
+                <div class="blocky-text">Balloon5</div>
+              </div></a></div>
+          <div class="blocky"><a href="#">
+              <div class="blocky-middle">
+                <div class="blocky-text">Balloon6</div>
+              </div></a></div>
+          <div class="blocky blocky-even"><a href="#">
+              <div class="blocky-middle">
+                <div class="blocky-text">Balloon7</div>
+              </div></a></div>
+        </div>
+      </section>      
+      
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/J-Kallunki/css-balloonsy">Css-balloonsy</a> is maintained by <a href="https://github.com/J-Kallunki">J-Kallunki</a>.</span>
 
