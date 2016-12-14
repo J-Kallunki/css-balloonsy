@@ -9,130 +9,115 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <style type="text/css">
-      }
 .blockgony .blocky-row {
-    clear: left
+  clear: left;
 }
-
 .blockgony .blocky {
-    float: left;
-    margin-right: -12px;
-    margin-bottom: -36px;
+  float: left;
+  margin-right: -12px;
+  margin-bottom: -36px;
 }
-
-.blockgony .blocky .blocky-middle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    float: left;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    font-size: .8em;
-    font-weight: 500;
-    text-decoration: none
+.blockgony .blocky-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-decoration: none;
 }
-
-.blockgony .blocky a:hover .blocky-middle {
-    text-decoration: underline
+.blockgony a:hover .blocky-middle {
+  text-decoration: underline;
 }
-
-.blockgony .blocky.blocky-even {
-    margin-top: 30px
+.blockgony.blocky-even {
+  margin-top: 30px;
 }
-
-.blockgony .blocky.blocky-white .blocky-middle {
-    background-color: transparent;
-    border-color: transparent
+.blockgony.blocky-white .blocky-middle {
+  background-color: transparent;
+  border-color: transparent;
 }
-
 .balloonsy-container {
-    position: relative;
-    height: 300px;
-    width: 364px;
-    overflow: hidden;
-    border: solid 8px #f60;
-    border-radius: 2px;
-    font-size: 11px;
+  position: relative;
+  height: 300px;
+  width: 350px;
+  overflow: hidden;
+  border: solid 8px #f60;
+  border-radius: 2px;
 }
-
 .blockgony {
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
 }
-
 .blockgony .blocky {
-    position: relative;
-    bottom: -100%;
-    -webkit-animation: flowup 12s linear infinite;
-    animation: flowup 12s linear infinite;
+  position: relative;
+  -webkit-animation: flowup 12s linear infinite;
+          animation: flowup 12s linear infinite;
 }
-
 .blockgony .blocky:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
-
 .blockgony .blocky:nth-child(2n) {
-    -webkit-animation-duration: 14s;
-    animation-duration: 14s
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
 }
-
 .blockgony .blocky:nth-child(3n) {
-    -webkit-animation-duration: 16s;
-    animation-duration: 16s
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
 }
-
 .blockgony .blocky-middle {
-    -webkit-transform: rotate(40deg);
-    transform: rotate(40deg)
+  color: #fff8f6;
+  background-color: #09f;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  border-radius: 50% 50% 0 50%;
 }
-
 .blockgony .blocky-text {
-    -webkit-transform: rotate(-40deg);
-    transform: rotate(-40deg)
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
 }
-
-.blockgony .blocky-middle {
-    color: #fff8f6;
-    background-color: #09f;
-    border-radius: 50% 50% 0 50%;
-    -webkit-transition: background-color .1s ease-in;
-    transition: background-color .1s ease-in
-}
-
-.blockgony .blocky .blocky-middle {
-    -webkit-transition: background-color .4s ease-in;
-    transition: background-color .4s ease-in
-}
-
 .blockgony .blocky a:hover .blocky-middle {
-    background-color: #f60
+  -webkit-animation: bgrchange 0.4s ease-in forwards;
+          animation: bgrchange 0.4s ease-in forwards;
 }
 @-webkit-keyframes flowup {
-    0% {
-        bottom: -100%
-    }
-
-    100% {
-        bottom: 110px
-    }
+  0% {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+  100% {
+    -webkit-transform: translateY(-72px);
+            transform: translateY(-72px);
+  }
 }
-
 @keyframes flowup {
-    0% {
-        bottom: -100%
-    }
-
-    100% {
-        bottom: 110px
-    }
+  0% {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+  100% {
+    -webkit-transform: translateY(-72px);
+            transform: translateY(-72px);
+  }
+}
+@-webkit-keyframes bgrchange {
+  to {
+    background-color: #f60;
+  }
+}
+@keyframes bgrchange {
+  to {
+    background-color: #f60;
+  }
 }
 
     </style>
